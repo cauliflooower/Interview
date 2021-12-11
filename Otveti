@@ -1,0 +1,81 @@
+Имя *
+Ангелина
+
+Адрес электронной почты 
+angelina.941053qw@gmail.com
+
+1. What's OOP? Основные принципы ООП?
+ООП - это объектно-ориентированное программирование. В js 4 принципа ооп: инкапсуляция, абстракция, полиморфизм, наследование.
+
+2. Базовая математика в JavaScript — числа и операторы.Write a program for a simple calculator
+class NewCalc {
+  add(t1, t2) {
+    return t1 + t2
+  }
+
+  sub(t1, t2) {
+    return t1 - t2
+  }
+
+  multiply(t1, t2) {
+    return t1 * t2
+  }
+  share(t1, t2) {
+    return t1 / t2
+  }
+}
+const newCalc = new NewCalc()
+console.log(newCalc.add(10, 5))
+ 
+3. Tell me about ECMAScript Editions.Which is the latest
+ECMAScript - это стандарт, на котором основан JavaScript.
+ECMAScript 2020:
+String.prototype.matchAll;
+import();
+import.meta;
+BigInt – арифметика произвольной точности;
+Promise.allSettled;
+globalThis;
+for-in;
+необязательная цепочка;
+нулевой оператор объединения;
+export * as ns from «mod».
+
+4.Разница между null и undefined?
+null представляет отсутствующий объект
+undefined представляет неинициализированное состояние
+
+5.Inside which HTML element do we put the JavaScript?
+<script src="app.js"></script>
+
+6.What is the correct JavaScript syntax to change the content of the HTML element below?<p id="demo">This is a demonstration.</p>
+let p = document.getElementById("demo");
+p.innerHTML = "RS";
+
+7. complete CSS https://codepen.io/HalimHamidov/pen/bGowyJz
+h2:before{
+  content: '♡'
+}
+
+8/
+function binarySearch(value, list) {
+  let first = 0; 
+  let last = list.length - 1;
+  let position = -1;
+  let found = false;
+  let middle;
+
+  while (found === false && first <= last) {
+      middle = Math.floor((first + last)/2);
+      if (list[middle] == value) {
+          found = true;
+          position = middle;
+      } else if (list[middle] > value) { 
+          last = middle - 1;
+      } else {
+          first = middle + 1;
+      }
+  }
+  return position;
+}
+В отличие от линейного поиска, бинарный поиск использует отсортированный список. Для поиска значения вы сначала сравниваете значение со средним элементом списка. Если они равны, значение поиска найдено. Если значение поиска больше, чем средний элемент, выполняется поиск в верхней половине данных. Затем вы сравниваете средний элемент этого раздела со значением поиска. В качестве альтернативы, если элемент меньше среднего элемента, вы ищете в нижней половине списка и сравниваете его среднее значение.
